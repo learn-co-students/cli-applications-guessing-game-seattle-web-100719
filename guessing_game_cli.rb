@@ -1,7 +1,4 @@
-require "pry"
-
 def run_guessing_game
-  welcomeUser
   computerNumber = getRandNumber
   input = getUserInput
   checkedInput = inputCheck(input)
@@ -10,10 +7,6 @@ def run_guessing_game
   else
     guessedCorrect(computerNumber, checkedInput)
   end
-end# Code your solution here!
-
-def welcomeUser
-  "Welcome to the Guessing Game!"
 end
 
 def getRandNumber
